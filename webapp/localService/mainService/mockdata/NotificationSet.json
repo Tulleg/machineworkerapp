@@ -1,0 +1,14 @@
+[{
+    "NotifNo": "10000001",
+    "Description": "Pumpe macht Geräusche",
+    "Equipment": "1000234",
+    "Priority": "1",
+    "Status": "OFFN"
+},
+{
+    "NotifNo": "10000002",
+    "Description": "Dichtung tauschen",
+    "Equipment": "1000234",
+    "Priority": "3",
+    "Status": "INAR"
+}]
