@@ -1,0 +1,33 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    
+    <Dialog id="addDialog" title="Neue Maßnahme melden">
+        <f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12">
+            <f:content>
+                <Label text="Equipment" required="true"/>
+                <Input id="inputEquipment" placeholder="Equipment-Nr. scannen oder tippen" />
+                
+                <Label text="Beschreibung" required="true"/>
+                <Input id="inputDescription" placeholder="Was ist defekt?" />
+                
+                <Label text="Priorität"/>
+                <Select id="selectPriority" selectedKey="3">
+                    <core:Item key="1" text="1 - Sehr Hoch (Ausfall)" />
+                    <core:Item key="2" text="2 - Hoch" />
+                    <core:Item key="3" text="3 - Mittel" />
+                    <core:Item key="4" text="4 - Niedrig" />
+                </Select>
+            </f:content>
+        </f:SimpleForm>
+        
+        <beginButton>
+            <Button text="Speichern" type="Emphasized" press=".onSaveNotification" />
+        </beginButton>
+        <endButton>
+            <Button text="Abbrechen" press=".onCloseDialog" />
+        </endButton>
+    </Dialog>
+    
+</core:FragmentDefinition>

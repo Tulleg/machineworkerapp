@@ -9,8 +9,18 @@
         <content>
             <List
                 id="notificationList"
-                headerText="Aktuelle Maßnahmen"
                 items="{/NotificationSet}">
+                
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Aktuelle Maßnahmen" level="H2"/>
+                        <ToolbarSpacer /> <Button 
+                            icon="sap-icon://add" 
+                            text="Neue Maßnahme" 
+                            type="Emphasized" 
+                            press=".onOpenAddDialog" />
+                    </Toolbar>
+                </headerToolbar>
                 <items>
                     <ObjectListItem
                         title="{Description}"

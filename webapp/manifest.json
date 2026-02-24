@@ -86,7 +86,7 @@
         "viewType": "XML",
         "path": "machineworkerapp.view",
         "async": true,
-        "viewPath": "machineworkerapp.view"
+        "viewPath": "machineWorkerApp.view"
       },
       "routes": [
         {
