@@ -1,6 +1,31 @@
-<mvc:View controllerName="machineworkerapp.controller.machineWorkerApp"
+
+<mvc:View
+    controllerName="machineworkerapp.controller.machineWorkerApp"
     xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    
+    <Page id="page" title="Maschinenführer Dashboard">
+        <content>
+            <List
+                id="notificationList"
+                headerText="Aktuelle Maßnahmen"
+                items="{/NotificationSet}">
+                <items>
+                    <ObjectListItem
+                        title="{Description}"
+                        number="{NotifNo}">
+                        <attributes>
+                            <ObjectAttribute title="Equipment" text="{Equipment}" />
+                            <ObjectAttribute title="Priorität" text="{Priority}" />
+                        </attributes>
+                        <firstStatus>
+                            <ObjectStatus title="Status" text="{Status}" />
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
     </Page>
+    
 </mvc:View>

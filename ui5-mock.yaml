@@ -36,6 +36,6 @@ server:
         services:
           - urlPath: /here/goes/your/serviceurl
             metadataPath: ./webapp/localService/mainService/metadata.xml
-            mockdataPath: ./webapp/localService/mainService/data
+            mockdataPath: ./webapp/localService/mainService/mockdata
             generateMockData: true
         annotations: []
